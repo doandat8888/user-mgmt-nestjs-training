@@ -9,6 +9,7 @@ async function bootstrap() {
             whitelist: true //Make sure that there is no extra property in request
         })
     )
-    await app.listen(3000);
+    app.enableCors();
+    await app.listen(8000);
 }
 bootstrap();
